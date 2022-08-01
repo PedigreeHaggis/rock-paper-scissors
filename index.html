@@ -4,8 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <script src="./resources/js/script.js" defer></script>
+    <title>Rock Paper Scissors</title>
   </head>
-  <body></body>
-  <script src="script.js"></script>
+  <body>
+    <header class="header">
+      <img
+        src="./resources/imgs/rps-logo.png"
+        alt="Rock Paper Scissors icons"
+        class="header-logo"
+      />
+      <p class="header-title">Rock,Paper & Scissors</p>
+    </header>
+    <main class="main">
+      <section class="buttons" id="game-buttons">
+        <div class="button-container">
+          <div class="rock-container">
+            <button class="rock-button button">
+              <img
+                src="./resources/imgs/rock.png"
+                alt="Rock hand icon"
+                class="rock-img game-img"
+              />
+            </button>
+            <p class="button-subtitle rock-subtitle">ROCK</p>
+          </div>
+          <div class="paper-container">
+            <button class="paper-button button">
+              <img
+                src="./resources/imgs/paper.png"
+                alt="Paper Hand Icon"
+                class="paper-img game-img"
+              />
+            </button>
+            <p class="button-subtitle paper-subtitle">PAPER</p>
+          </div>
+          <div class="scissor-container">
+            <button class="scissor-button button">
+              <img
+                src="./resources/imgs/scissors.png"
+                alt="Scissors Hand Icon"
+                class="scissor-img game-img"
+              />
+            </button>
+            <p class="button-subtitle scissor-subtitle">SCISSORS</p>
+          </div>
+        </div>
+      </section>
+      <section class="scores" id="score">
+        <div class="user-score">
+          <p class="user-subtile">User Score:</p>
+          <p class="user-score-number"></p>
+        </div>
+        <div class="computer-score">
+          <p class="computer-subtile">Computer Score:</p>
+          <p class="computer-score-number"></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

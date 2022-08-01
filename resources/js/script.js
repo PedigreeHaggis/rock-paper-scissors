@@ -30,7 +30,7 @@ function game(){
     const drawMessage = 'Its a Draw';
 
     for(let i = 0; i < 5; i++){
-        let userChoice = prompt("enter your choice:\nRock|Paper|Scissors");
+        // let userChoice = prompt("enter your choice:\nRock|Paper|Scissors");
         switch(playRound(userChoice, getComputerChoice())){
             case 'Winner':
                 alert(winMessage)

@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fs-title: 4.5rem;
+  --fs-subtitle: 2rem;
+
+  --fw-bold: 700;
+  --fw-reg: 400;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+section {
+  padding: 2rem 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.header-title {
+  font-size: var(--fs-title);
+}
+
+.button-container {
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.rock-container,
+.paper-container,
+.scissor-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-subtitle {
+  font-size: var(--fs-subtitle);
+}
+
+.button {
+  box-shadow: -0.5rem 0.75rem 0.75rem rgba(255, 255, 255, 0.5);
+  border: 5px solid gray;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.button:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: seashell;
+}
+
+.button:active {
+  box-shadow: none;
+  background-color: white;
+  margin: -2rem;
+}
+
+.game-img {
+  width: 300px;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  font-size: var(--fs-subtitle);
+}
