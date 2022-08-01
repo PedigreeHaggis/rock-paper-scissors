@@ -56,8 +56,7 @@ section {
   margin: 0 auto;
   text-align: center;
 }
-
-.button-subtitle {
+.buttons {
   font-size: var(--fs-subtitle);
 }
 
