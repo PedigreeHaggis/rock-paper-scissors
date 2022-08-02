@@ -13,7 +13,7 @@ let userScore = 0;
 let computerScore = 0;
 
 const rules = {
-    rock:'scissors',
+    rock: 'scissors',
     paper: 'rock',
     scissors: 'paper',
 }
@@ -27,17 +27,17 @@ function playRound(userChoice, computerChoice){
     const loseMessage = `You Chose ${userChoice.toUpperCase()} and the computer chose ${computerChoice.toUpperCase()}\n You Lost this Round`;
     const drawMessage = `You Chose ${userChoice.toUpperCase()} and the computer chose ${computerChoice.toUpperCase()}\n It's a Draw`;
 
-    if(userChoice.toLowerCase() === rules[computerChoice]){
-        winnerMessage.textContent = winMessage
+    if(userChoice.toLowerCase() === rules[computerChoice.toLowerCase()]){
+        winnerMessage.textContent = loseMessage
         console.log(winMessage)
-        userScore++;
-    } else if (userChoice.toLowerCase() === computerChoice){
+        computerScore++;
+    } else if (userChoice.toLowerCase() === computerChoice.toLowerCase()){
         winnerMessage.textContent = drawMessage
         console.log(drawMessage);
-    } else{
-        winnerMessage.textContent = loseMessage
+    } else if(userChoice.toLowerCase() !== rules[computerChoice.toLowerCase()]){
+        winnerMessage.textContent = winMessage
         console.log(loseMessage)
-        computerScore++
+        userScore++
     }
 }
 
