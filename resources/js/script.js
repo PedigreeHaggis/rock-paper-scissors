@@ -23,9 +23,9 @@ const rules = {
 /////////////////////////////
 
 function playRound(userChoice, computerChoice){
-    const winMessage = 'You Won this Round';
-    const loseMessage = 'You Lost this Round';
-    const drawMessage = 'Its a Draw!';
+    const winMessage = `You Chose ${userChoice.toUpperCase()} and the computer chose ${computerChoice.toUpperCase()}\n You Won this Round`;
+    const loseMessage = `You Chose ${userChoice.toUpperCase()} and the computer chose ${computerChoice.toUpperCase()}\n You Lost this Round`;
+    const drawMessage = `You Chose ${userChoice.toUpperCase()} and the computer chose ${computerChoice.toUpperCase()}\n It's a Draw`;
 
     if(userChoice.toLowerCase() === rules[computerChoice]){
         winnerMessage.textContent = winMessage
@@ -48,9 +48,9 @@ function getComputerChoice(){
         case 0:
             return 'rock';
         case 1:
-            return 'scissors';
-        case 2:
             return 'paper';
+        case 2:
+            return 'scissors';
         default:
             break;
     }
@@ -75,7 +75,8 @@ function resetGame(){
 winnerMessage.style.textAlign = 'center'
 winnerMessage.textContent = 'Click any of the above buttons to start'
 computerScoreNumber.textContent = userScore;
-userScoreNumber.textContent =computerScore;
+userScoreNumber.textContent = computerScore;
+
 
 rockButton.addEventListener('click', function() {
     playRound('rock', getComputerChoice());
