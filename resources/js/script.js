@@ -73,6 +73,7 @@ function resetGame(){
 ///////////////////////////////
 
 winnerMessage.style.textAlign = 'center'
+winnerMessage.textContent = 'Click any of the above buttons to start'
 computerScoreNumber.textContent = userScore;
 userScoreNumber.textContent =computerScore;
 
