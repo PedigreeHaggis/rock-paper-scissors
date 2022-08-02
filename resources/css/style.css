@@ -5,8 +5,8 @@
 }
 
 :root {
-  --fs-title: 4.5rem;
-  --fs-subtitle: 2rem;
+  --fs-title: 3rem;
+  --fs-subtitle: 1.5rem;
 
   --fw-bold: 700;
   --fw-reg: 400;
@@ -21,10 +21,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
+  font-size: var(--fs-subtitle);
 }
 
 section {
-  padding: 2rem 3rem;
+  padding: 0.75rem 5rem;
 }
 
 .header {
@@ -40,6 +41,10 @@ section {
 
 .header-title {
   font-size: var(--fs-title);
+}
+
+.game-rule {
+  text-align: center;
 }
 
 .button-container {
@@ -79,7 +84,7 @@ section {
 }
 
 .game-img {
-  width: 300px;
+  width: 200px;
 }
 
 .scores {
